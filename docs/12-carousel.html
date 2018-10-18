@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Photo Ninja</title>
+</head>
+
+<body>
+
+    <!-- carousel -->
+
+    <div class="carousel carousel-slider">
+        <a href="#one!" class="carousel-item"><img src="../img/city.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="../img/man.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item"><img src="../img/nature.jpg" alt=""></a>
+        <a href="#four" class="carousel-item"><img src="../img/portrait.jpg" alt=""></a>
+        <a href="#five" class="carousel-item"><img src="../img/street.jpg" alt=""></a>
+    </div>
+
+    <div class="container">
+        <div class="btn green waves-effect prev">Prev</div>
+        <div class="btn green waves-effect next">Next</div>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                // fullWidth: true,
+                indicators: true,
+            });
+
+            // function for next slide
+            $('.next').click(function(){
+                $('.carousel').carousel('next');
+            });
+
+            // function for prev slide
+            $('.prev').click(function(){
+                $('.carousel').carousel('prev');
+            });
+
+        });
+    </script>
+</body>
+
+</html>
